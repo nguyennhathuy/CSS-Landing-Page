@@ -3,60 +3,106 @@
     padding: 0px;
     box-sizing: border-box;
     font-size: 14px;
-  }
-  
-  html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --border: #C5D0DA;
+    --bg-button: #D2445C;
+
+}
+
+html {
     height: 100%;
     width: 100%;
-  }
-  
-  
-  header {
-    background-color: yellow;
+}
+
+
+header {
     height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  header .logo,
-  header .user {
+    border-bottom: 1px solid var(--border);
+}
+
+header .logo,
+header .user {
     display: inline-block;
-  }
-  
-  header .logo {
+}
+
+header .logo {
     margin-left: 20px;
     font-weight: bold;
     font-size: 20px;
-  }
-  
-  header .user {
+}
+
+header .user {
     margin-right: 20px;
-  }
-  
-  header .user {
+}
+
+header .user {
     float: right;
     display: flex;
     align-items: center;
     gap: 10px;
-  }
-  
-  .user .user__avatar {
+}
+
+.user .user__avatar {
     width: 25px;
-  }
-  
-  .search-book {
-    background-color: blueviolet;
+    mix-blend-mode: multiply;
+}
+
+.search-book {
     display: flex;
     justify-content: flex-end;
     margin-top: 25px;
     margin-bottom: 15px;
-  }
-  .search-book .search-book__button {
+}
+
+.search-book .search-book__button {
     margin-right: 20px;
-  }
-  
-  .data-table {
-    background-color: aqua;
-    margin: 0 15px;
-  }
+    background-color: var(--bg-button);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.search-book .search-book__input {
+    margin-right: 10px;
+    padding-left: 10px;
+    border: 2px solid var(--border);
+    border-radius: 3px;
+    width: 250px;
+}
+
+::placeholder {
+    color: var(--border);
+}
+
+.data-table {
+    display: flex;
+    justify-content: center;
+}
+
+.data-table table {
+    width: 98%;
+    border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+    border: 2px solid var(--border);
+    text-align: left;
+    padding: 10px;
+}
+
+.data-table td button {
+    border: none;
+    color: var(--bg-button);
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+}
