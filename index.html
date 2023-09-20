@@ -29,23 +29,68 @@
 
         <div class="data-table">
             <table>
-                <tr>
-                    <th>Company</th>
-                    <th>Contact</th>
-                    <th>Country</th>
-                    <th>Action</th>
-                </tr>
-                <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
-                    <td>Germany</td>
-                    <td>
-                        <button>
-                            Delete
-                        </button>
-                    </td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Author</th>
+                        <th>Topic</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+                
             </table>
+        </div>
+
+        <div class="modal-delete">
+            <div class="modal-delete-inner">
+                <div class="modal-delete-inner__header">
+                    <span>Delete Book</span>
+                    <img src="./close-icon.png"  />
+                </div>
+                <div class="modal-delete-inner__body">
+                    Do you want to delete Refactoring book?
+                </div>
+                <div class="modal-delete-inner__footer">
+                    <button class="delete-button">Delete</button>
+                    <button class="cancel-button">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal-form">
+            <div class="modal-form-inner">
+                <div class="modal-form-inner__header">
+                    <span>Add Book</span>
+                    <img src="./close-icon.png"  />
+                </div>
+                <div class="modal-form-inner__body">
+                    <form action="">
+                        <div>
+                            <label>Name</label>
+                            <input type="text" />
+                        </div>
+                        <div>
+                            <label>Author</label>
+                            <input type="text" />
+                        </div>
+                        <div>
+                            <label>Topic</label>
+                            <select name="" id="">
+                                <option value="">Programming</option>
+                                <option value="">Database</option>
+                                <option value="">DevOps</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-form-inner__footer">
+                    <button class="create-button">Create</button>
+                </div>
+            </div>
         </div>
     </article>
 
