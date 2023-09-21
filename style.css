@@ -106,7 +106,6 @@ header .user {
 }
 
 .modal-delete {
-    display: none;
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     top: 0;
@@ -168,7 +167,6 @@ header .user {
 
 
 .modal-form {
-    display: none;
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     top: 0;
@@ -233,4 +231,8 @@ input[type=text], select {
     border: 2px solid var(--border);
     border-radius: 3px;
     padding-left: 10px;
+}
+
+.hide {
+    display: none;
 }
